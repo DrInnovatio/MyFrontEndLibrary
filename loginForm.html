@@ -19,6 +19,38 @@
 
   <!-- name은 page 안에서 중복되어 사용이 가능하며 action에 해당하는 페이지로 전달하는 파라미터로 사용된다. id는 page 안에서 중복 사용 불가하며 주로 JavaScript에서 다룰려고 지정하는 것이다. -->
 
+  <label>Hobby</label>
+  Fishing <input type="checkbox" name="hobby" value="fishing" checked>Fishing
+  Reading <input type="checkbox" name="hobby" value="reading" checked>Reading
+  Working Out <input type="checkbox" name="hobby" value="workingout" checked>Working Out
+  <br>
+
+  <label>Hobby</label>
+  Fishing <input type="radio" name="hobby" value="fishing" >Fishing
+  Reading <input type="radio" name="hobby" value="reading" >Reading
+  Working Out <input type="radio" name="hobby" value="workingout" >Working Out
+  <br>
+
+  <!-- Make it possible the cursor places in the text input by clicking James. -->
+
+  <label for="foo">James</label>
+  <input type="text" id="foo">
+
+  <br>
+
+  <label for="bar">Would you like to save it?</label>
+  <input type="checkbox" id="bar">
+
+  <br>
+
+  <label>Your Vehicle</label>
+  <select name="cars" id="">
+    <option value="sonata">Sonata</option>
+    <option value="morning">Morning</option>
+    <option value="benz">Benz</option>
+    <option value="audi">Audi</option>
+  </select>
+
   
 </body>
 </html>
