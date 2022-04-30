@@ -44,12 +44,45 @@
   <br>
 
   <label>Your Vehicle</label>
-  <select name="cars" id="">
+  <select name="cars">
     <option value="sonata">Sonata</option>
     <option value="morning">Morning</option>
     <option value="benz">Benz</option>
     <option value="audi">Audi</option>
   </select>
+
+  <br>
+
+  <!-- File upload form -->
+
+  <form action="./proc" name="myForm" method="post" enctype="multipart/form-data">
+      <input type="file" name="photo" required multiple><br>
+      <input type="submit" value="save"><br>
+      <input type="range" name="val" min="0" max="100" value="0"><br>
+      <input type="submit" value="counting">
+  </form>
+
+  <!-- various form types -->
+
+  <form>
+    Name: <input type="text" name="username"><br>
+    Password: <input type="password" name="password"><br>
+    Gender: <input type="radio" name="gender" value="female">Female<br>
+
+    Transfortation: <input type="checkbox" name="vehicle" value="bike">Bicycle
+    <input type="checkbox" name="vehicle" value="car">Car
+    <input type="checkbox" name="vehicle" value="bue">Bus
+    <input type="checkbox" name="vehicle" value="subway">Subway <br>
+
+    Birthday: <input type="date" name="bday" max="1900-12-31"><br>
+    Picking color: <input type="color" name="favcolor"><br>
+    Email: <input type="email" name="email"><br>
+    Age: <input type="range" name="age" min="0" max="120"><br>
+    Details: <input type="tel" name="usertel"><br>
+    Blog: <input type="url" name="blogurl"><br>
+    <input type="reset" value="initialization">
+    <input type="submit" value="join"><br>
+  </form>
 
   
 </body>
