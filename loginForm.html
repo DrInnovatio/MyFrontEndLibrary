@@ -84,6 +84,16 @@
     <input type="submit" value="join"><br>
 
     <input type="number" name="num1" step="5"> <!--ntering numbers by steps -->
+    <br>
+
+    <form action="./search.php" name="searchForm" method="post">
+      <input type="search" name="q" value="" placeholder="Searching..." required> <!-- You must enter something for "required" attribute. -->
+      <input type="submit" value="searching"><br>
+      <input type="text" name="postal_code" pattern="[0-9]{5}" title="enter 5digit number." size="5">
+      <input type="submit" value="address">
+
+    </form>
+
   </form>
 
   
