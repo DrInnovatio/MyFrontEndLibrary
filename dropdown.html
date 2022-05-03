@@ -38,10 +38,37 @@
   </form>
 
   <!-- enctype="multipart/form-data" : must be added to upload files and images.  -->
-  
+  <!-- label을 클릭하면, 연결된 양식에 입력할 수 있도록 하거나, 체크를 하거나, 체크를 해제한다. -->
+
+  <div class="aside">
+    <p>content 1</p>
+    <p>content 2</p>
+  </div>
+
+  <div class="divactive">Option 1</div>
+  <div>Option 2</div>
+  <div class="divactive">Option 3</div>
+
+ 
 </body>
 
 <style>
+
+  .div.divactive:hover {
+    border: 5px solid red;
+  }
+
+  .aside p::before{
+    content: '===';
+    color:red;
+  }
+
+  .aside p::first-letter{
+    font-size: 34px;
+    color:red;
+  }
+
+
 
   #browsers {
     border: 1px solid purple;
