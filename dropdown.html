@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DropDown</title>
+</head>
+<body>
+
+  <select name="browsers" id="browsers" >
+    <option value="select">SELECT</option>
+    <option value="chrome">chrome</option>
+    <option value="explore">explore</option>
+    <option value="safari" selected>safari</option> <!-- selected: This will be shown first in the woindow. --> 
+    <option value="edge">edge</option>
+    <option value="firefox">firefox</option>
+    <option value="opera">opera</option>
+    <input type="submit">
+  </select>
+
+  <br><br><br><br><br>
+  <!-- Login Form -->
+
+  <form name="loginform" method="post" id="authForm" action="https://www.tistory.com/auth/login">
+    <div>
+      <label for="loginId">ID</label>
+      <input type="email" id="loginId" name="loginId" placeholder="ID">
+      <label for="loginPW">Password</label>
+      <input type="password" id="password" name="password" placeholder="password">
+    </div>
+    <button type="submit" disabled="disabled">Log In</button> 
+    <div>
+      <input type="checkbox" id="keepLogin">
+      <label for="keepLogin"><span>Keep LogIn</span></label>
+    </div>    
+
+  </form>
+
+  <!-- enctype="multipart/form-data" : must be added to upload files and images.  -->
+  
+</body>
+
+<style>
+
+  #browsers {
+    border: 1px solid purple;
+    border-radius: 10px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+  }
+  
+</style>
+</html>
