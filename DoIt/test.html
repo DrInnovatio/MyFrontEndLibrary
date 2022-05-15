@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./jquery-3.6.0.min.js"></script>
+  <title>Document</title>
+  <script>
+    document.write("say \"hello\"", "<br>");
+
+    var result;
+
+    var num = prompt("Enter a number", "0");
+    result = num % 2 == 0 ? "Even number" : "Odd number";
+    document.write(result, "<br>");
+
+    var car = new Object();
+
+    car.color = "white";
+    car.price = "1000";
+
+    car.getinfo = function(){
+      document("COLOR : ", this.color, "<br>");
+      document("PRICE : ", this.price, "<br>");
+    }
+
+    var num4 = 1.56;
+
+    var foo = Math.round(num4);
+
+    document.write(foo);
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
