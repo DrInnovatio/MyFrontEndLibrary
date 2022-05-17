@@ -8,10 +8,29 @@
   <script src="js/jquery.min.js"></script>
   <script>
 
+    $(function(){
+        $(".wrap_1").css("border", "1px solid orange");
+        $(".wrap_1 p").eq(0).css("background-color", "yellow");
+        $(".active").next("p").css("background-color", "aqua");
+        $(".wrap_1 p").eq(1).removeClass("active");
+        $(".wrap_1 p").append("<p>TEXT 2</p>")
+    });
+
+
+
 
   </script>
 </head>
 <body>
+  <div class="wrap_1">
+      <p>TEXT 1</p>
+      <p class="active">Contents 2</p>
+      <p><a href="#">NAVER</a></p>
+      <p>
+        <input type="text" value="hello">
+      </p>
+
+  </div>
   
 </body>
 </html>
