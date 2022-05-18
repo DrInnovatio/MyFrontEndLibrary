@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(function(){
+      /**
+          $(".btn1 a").mouseover(function(){
+        alert("Testing!!");
+      });
+      $(".btn1 a").focus(function(){
+        alert("Testing focus!!");
+      });   
+      $(".btn1 a").on("mouseover focus", function(){
+          var ts = $(this);
+          ts.css("background-color", "pink");
+      });  
+      **/
+
+      $(".btn1 a").on("click", function(){
+          var ts = $(this);
+          $(".btn1").next("ul").filter(":visible").hide();
+          ts.parent().next().show();
+          return false;
+      });
+    });
+
+  </script>
+</head>
+<body>
+  <p class="btn1"><a href="#">Event target 1</a></p>
+  <ul style="display:none">
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+  </ul>
+
+  <p class="btn1"><a href="#">Event target 2</a></p>
+  <ul style="display:none">
+    <li>List 4</li>
+    <li>List 5</li>
+    <li>List 6</li>
+  </ul>
+  
+</body>
+</html>
