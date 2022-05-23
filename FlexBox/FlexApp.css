@@ -1,0 +1,31 @@
+.container{
+  padding-top: 100px ;
+  background-color: beige;
+  height: 100vh;
+  display: flex; 
+ 
+} 
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.item1 {
+  background: #ef9a9a;
+  /* flex-grow: 1;
+  flex-shrink: 2; 
+  flex-basis: 50%;*/
+}
+
+.item2 {
+  background: #bc2727;
+  
+
+}
+
+.item3 {
+  background: #e086f8;
+ 
+}

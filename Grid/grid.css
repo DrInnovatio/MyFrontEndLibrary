@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill), minmax(200px, 1fr);
+  gap: 20px;
+}
+
+.box1{
+  background-color: red;
+}
+
+.box2{
+  background-color: gray;
+}
+
+.box3{  
+  background-color: yellow; 
+}
+
+.box4{
+  background-color: green;
+}
+
+.box5{
+  background-color: blue;
+}
+
+.box6{
+  background-color: blueviolet;
+}
+
+.box7{
+  background-color: pink;
+}
+
+.box8{  
+  background-color: palegreen;
+}
+
+.box9{  
+  background-color: orange;
+}
+
+.box10{
+  background-color: rgb(166, 171, 241);
+}
